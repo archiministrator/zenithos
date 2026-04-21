@@ -14,20 +14,13 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 up -y && dnf5 group install cinnamon-desktop base-graphical container-management core fonts hardware-support multimedia networkmanager-submodules printing virtualization -y
 dnf5 install -y \
-    bootc \
     fedpkg \
-    gcc \
-    curl \
-    flatpak \
-    ostree \
     papirus-icon-theme \
     human-theme-gtk \
     fish \
     abootimg \
-    gnome-disk-utility \
     meson \
     bat \
-    wget \
     git \
     clang \
     make \
@@ -36,9 +29,7 @@ dnf5 install -y \
     glib \
     lld \
     pre-commit \
-    vim \
     ffmpeg \
-    nano \
     archivemount \
     binwalk \
     f3 \
@@ -46,15 +37,11 @@ dnf5 install -y \
     gnome-themes-extra \
     gsmartcontrol \
     lzip \
-    lpf-mscore-fonts \
     plank \
-    slick-greeter \
     waydroid \
     guake \
     btrfs-assistant \
-    torbrowser-launcher \
-
-    lightdm
+    torbrowser-launcher
 
 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 

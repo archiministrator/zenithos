@@ -43,8 +43,6 @@ dnf5 install -y \
     btrfs-assistant \
     torbrowser-launcher
 
-NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
 dnf5 -y copr enable wojnilowicz/ungoogled-chromium
 dnf5 -y install ungoogled-chromium
 dnf5 -y copr disable wojnilowicz/ungoogled-chromium
